@@ -1,4 +1,5 @@
 // npx cypress run 
+// 1
 
 beforeEach(() => {
   cy.visit('/')
