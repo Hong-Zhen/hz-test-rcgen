@@ -12,6 +12,12 @@ afterEach(() => {
   cy.reload(true)
 })
 
+describe("Confirm fail", () => {
+  it ('Failling', () => {
+    cy.get("h1").contains("itchen")
+  })
+})
+
 describe("Navigate to Menu Page and back to Home Page", () => {
   it ('To Menu Page', () => {
     cy.get('ul.navigation-menu.flex-row.pop-font').not('.active')
