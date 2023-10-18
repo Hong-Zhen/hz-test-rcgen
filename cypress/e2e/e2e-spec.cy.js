@@ -1,5 +1,5 @@
 // npx cypress run 
-// 5
+// 6
 beforeEach(() => {
   cy.visit('/')
   cy.viewport('macbook-16')
