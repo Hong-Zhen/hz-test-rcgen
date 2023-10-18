@@ -68,3 +68,9 @@ describe("Open login page", () => {
   })
 })
 
+describe("Last test case", () => {
+  it('Open and close login page', () => {
+    cy.get('div.passive-button-style').contains("Log in").click()
+    cy.get('button.close-modal-btn').click()
+  })
+})
