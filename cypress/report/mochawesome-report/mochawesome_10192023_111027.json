@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-10-19T03:08:24.495Z",
-    "end": "2023-10-19T03:08:30.967Z",
-    "duration": 6472,
+    "start": "2023-10-19T03:10:21.093Z",
+    "end": "2023-10-19T03:10:27.173Z",
+    "duration": 6080,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "26428d38-1da1-4d44-834b-6893c16a7fe8",
+      "uuid": "a000a8d0-6561-4bcf-9cff-06154d833acd",
       "title": "",
       "fullFile": "cypress\\e2e\\fail-test.cy.js",
       "file": "cypress\\e2e\\fail-test.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "782aa071-ff35-4ef4-a1ca-7f223e42a357",
+          "uuid": "029e7afd-fee7-4fb3-970d-9c7740f45279",
           "title": "Confirm fail444",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Failling",
               "fullTitle": "Confirm fail444 Failling",
               "timedOut": null,
-              "duration": 5996,
+              "duration": 5618,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'itchen' within the element: <h1.txt-white> but never did.\n    at Context.eval (webpack://pizzatime/./cypress/e2e/fail-test.cy.js:17:17)",
                 "diff": null
               },
-              "uuid": "fa1a6015-6bc6-45a9-8395-4cad1d145f24",
-              "parentUUID": "782aa071-ff35-4ef4-a1ca-7f223e42a357",
+              "uuid": "057aaf2d-7f72-43b3-abce-6c34d52beeeb",
+              "parentUUID": "029e7afd-fee7-4fb3-970d-9c7740f45279",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "fa1a6015-6bc6-45a9-8395-4cad1d145f24"
+            "057aaf2d-7f72-43b3-abce-6c34d52beeeb"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 5996,
+          "duration": 5618,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -88,7 +88,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -97,7 +97,13 @@
       "version": "7.1.3"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
       "version": "6.2.0"
     }
   }

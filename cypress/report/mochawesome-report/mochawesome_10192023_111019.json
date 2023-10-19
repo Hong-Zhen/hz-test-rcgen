@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-10-19T03:10:11.085Z",
+    "end": "2023-10-19T03:10:19.015Z",
+    "duration": 7930,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "32cfe529-aabf-4ba2-82d2-3ba619d9ae7f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\e2e-spec.cy.js",
+      "file": "cypress\\e2e\\e2e-spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6c6068d5-cb72-4fcc-8673-9d165ea6d04c",
+          "title": "Navigate to Menu Page and back to Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To Menu Page",
+              "fullTitle": "Navigate to Menu Page and back to Home Page To Menu Page",
+              "timedOut": null,
+              "duration": 2683,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(2)').contains(\"Menu\").click();\ncy.url().should('include', '/menu');\ncy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(1)').contains(\"Home\").click();\ncy.location().should(loc => {\n  expect(loc.href).to.eq(Cypress.config().baseUrl);\n});",
+              "err": {},
+              "uuid": "48b80d29-cf73-4afc-9552-8337c4bdd080",
+              "parentUUID": "6c6068d5-cb72-4fcc-8673-9d165ea6d04c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "48b80d29-cf73-4afc-9552-8337c4bdd080"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2683,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5ea62cb4-fcb6-45bc-9397-fb1f58ad1b9f",
+          "title": "Navigate to About Page and back to Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To About Page",
+              "fullTitle": "Navigate to About Page and back to Home Page To About Page",
+              "timedOut": null,
+              "duration": 905,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(4)').contains(\"About\").click();\ncy.url().should('include', '/about');\ncy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(1)').contains(\"Home\").click();\ncy.location().should(loc => {\n  expect(loc.href).to.eq(Cypress.config().baseUrl);\n});",
+              "err": {},
+              "uuid": "5144952d-05ac-4166-a9e2-ef1796ff738e",
+              "parentUUID": "5ea62cb4-fcb6-45bc-9397-fb1f58ad1b9f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5144952d-05ac-4166-a9e2-ef1796ff738e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 905,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "3fbf9fe1-bf28-451c-8a21-37b3a601d4d5",
+          "title": "Navigate to Contact Page and back to Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To Contact Page",
+              "fullTitle": "Navigate to Contact Page and back to Home Page To Contact Page",
+              "timedOut": null,
+              "duration": 910,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(5)').contains(\"Contact\").click();\ncy.url().should('include', '/contact');\ncy.get('ul.navigation-menu.flex-row.pop-font').not('.active').get('li:nth-child(1)').contains(\"Home\").click();\ncy.location().should(loc => {\n  expect(loc.href).to.eq(Cypress.config().baseUrl);\n});",
+              "err": {},
+              "uuid": "9aee1aa7-f782-44ec-ac80-cb18600c4731",
+              "parentUUID": "3fbf9fe1-bf28-451c-8a21-37b3a601d4d5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9aee1aa7-f782-44ec-ac80-cb18600c4731"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 910,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "8e80d7a1-a30f-4813-aee7-3bed3f6568ab",
+          "title": "Open login page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open and close login page",
+              "fullTitle": "Open login page Open and close login page",
+              "timedOut": null,
+              "duration": 776,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('div.passive-button-style').contains(\"Log in\").click();\ncy.get('button.close-modal-btn').click();",
+              "err": {},
+              "uuid": "04f5ea5a-69c8-4dfa-a894-89b8ca70284e",
+              "parentUUID": "8e80d7a1-a30f-4813-aee7-3bed3f6568ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "04f5ea5a-69c8-4dfa-a894-89b8ca70284e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 776,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d6851ffe-c1a8-4456-bfc4-696d95a7f1b7",
+          "title": "Last test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open and close login page",
+              "fullTitle": "Last test case Open and close login page",
+              "timedOut": null,
+              "duration": 681,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('div.passive-button-style').contains(\"Log in\").click();\ncy.get('button.close-modal-btn').click();",
+              "err": {},
+              "uuid": "38fccf88-90de-4aad-8049-d3e2ff10429d",
+              "parentUUID": "d6851ffe-c1a8-4456-bfc4-696d95a7f1b7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "38fccf88-90de-4aad-8049-d3e2ff10429d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 681,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
