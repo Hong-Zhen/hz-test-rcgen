@@ -1,5 +1,5 @@
 // npx cypress run 
-// npx cypress open1
+// npx cypress open
 beforeEach(() => {
   cy.visit('/')
   cy.viewport('macbook-16')
@@ -62,9 +62,29 @@ describe("Open login page", () => {
   })
 })
 
-describe("Last test case", () => {
-  it('Open and close login page', () => {
+describe("Register Test Case", () => {
+  it ('Try registering new account', () => {
     cy.get('div.passive-button-style').contains("Log in").click()
-    cy.get('button.close-modal-btn').click()
+    cy.get('a.modal-signup-btn').click()
+    cy.url().should('include', '/register')
+    cy.get('form.registration-form')
+    .get('input[name="fullname"][type="text"]').type('My Name')
+    .get('input[name="email"][type="text"]').eq(1).type('mynewemail@gamil.com')
+    .get('section.password-section')
+    .get('input[type="password"][name="password"]').eq(1).type('mynewpassword')
+    .get('input[type="password"][name="repeatPassword"]').type('mynewpassword')
+    .get('button[class=register-btn][type=submit]').click()
+  })
+})
+
+describe("Login Test Case", () => {
+  it ('Login with present account', () => {
+    // cy.get('[class=login-and-cart]:contains("Log in")')
+    cy.get('div.passive-button-style').contains("Log in").click()
+    cy.get('article.modal').not('.null')
+    cy.get('input[name="email"][type="text"]').type('myemail@gmail.com')
+    cy.get('input[name="password"][type="password"]').type('mypassword')
+    cy.get('button.modal-login-btn').click()
+    // cy.get('button.close-modal-btn').click()
   })
 })
