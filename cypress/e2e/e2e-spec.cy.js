@@ -1,5 +1,5 @@
 // npx cypress run 
-// 6
+// npx cypress open1
 beforeEach(() => {
   cy.visit('/')
   cy.viewport('macbook-16')
@@ -10,12 +10,6 @@ beforeEach(() => {
 afterEach(() => {
   cy.reload(true)
 })
-
-// describe("Confirm fail", () => {
-//   it ('Failling', () => {
-//     cy.get("h1").contains("itchen")
-//   })
-// })
 
 describe("Navigate to Menu Page and back to Home Page", () => {
   it ('To Menu Page', () => {
